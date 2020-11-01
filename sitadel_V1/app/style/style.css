@@ -1,0 +1,84 @@
+* {
+  	box-sizing: border-box;
+	font-family: monospace;
+	color: snow;
+}
+body {
+  margin: 0;
+  padding: 20px;
+	background-color: #000;
+	background-image: url("../img/bg/bg.jpg");
+	background-size: 200%;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+h1.title {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 3px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 22.33%;
+  display: show; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px;
+  border: 1px solid	black;
+  transition: all 0.2s;
+}
+
+.content:hover{
+	border: 1px solid snow;
+	background-color: rgba(10,10,10,0.7);
+	border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.8);
+}
+
+
+.content img{
+	border: 1px solid snow;
+	border-radius: 0px;
+}
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
